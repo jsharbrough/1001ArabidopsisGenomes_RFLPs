@@ -1,6 +1,18 @@
 # 1001ArabidopsisGenomes_RFLPs
 
-A list of all the RFLP sites that are variable among the 1001 Arabidopsis genomes for EcoRI, BamHI, NotI, PstI, and HindIII. The genotypes of all 1135 lineages are also listed at each of those sites. If you'd like another restriction enzyme added, please get in touch (joel.sharbrough@nmt.edu), or feel free to use the code posted here to do it yourself. Amplicons and primers for selected markers are also posted here.
+A list of all the RFLP sites that are variable among the 1001 Arabidopsis genomes for EcoRI, BamHI, NotI, PstI, and HindIII. The genotypes of all 1135 lineages are available at [FigShare – DOI: 10.6084/m9.figshare.22121804](https://doi.org/10.6084/m9.figshare.22121804). The genotype format is a modified VCF format, such that 0|0 means that the accession has the restriction site (i.e., same genotype as TAIR10), while 1|1 means that the accession lacks the restriction site (i.e., different genotype from TAIR10). Original VCF header was as follows:
+
+##fileformat=VCFv4.1
+##FILTER=<ID=PASS,Description="All filters passed">
+##FILTER=<ID=q30,Description="Quality below 30">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Total Depth">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype Quality">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read Depth">
+##FILTER=<ID=q25,Description="Quality below 25">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT
+
+If you'd like another restriction enzyme added, please get in touch (joel.sharbrough@nmt.edu), or feel free to use the code posted here to do it yourself. Amplicons and primers for selected markers are also posted here.
 
 Data from:
 https://1001genomes.org/data/GMI-MPI/releases/v3.1/
